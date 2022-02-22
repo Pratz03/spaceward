@@ -43,4 +43,15 @@ You can learn more in the [Create React App documentation](https://facebook.gith
 
 To learn React, check out the [React documentation](https://reactjs.org/).
 
-##  love
+## By pratiksha
+
+1. Cleanup -
+    1. Deleted App.js, logo.png, setupTests.js
+    2. Counter.module.css -> Counter.css
+    3. Delete whole <header></header> part from App.js
+    4. Get rid of logo and counter of import from App.js
+    5. Delete all the css App.css
+    6. Folder features/counter -> features
+
+2. Shorcut - 
+    1. Go to component word's end like if <Sidebar /> -> sidebar| then ctrl+space to import it to app.js

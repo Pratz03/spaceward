@@ -53,5 +53,9 @@ To learn React, check out the [React documentation](https://reactjs.org/).
     5. Delete all the css App.css
     6. Folder features/counter -> features
 
-2. Shorcut - 
-    1. Go to component word's end like if <Sidebar /> -> sidebar| then ctrl+space to import it to app.js
+2. Shortcut - 
+    1. Go to component word's end like if <Sidebar /> -> sidebar| then ctrl+space to import it to app.
+    
+3. Installations
+    1. material ui - npm install @material-ui/core
+    icons - npm install @material-ui/icons

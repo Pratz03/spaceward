@@ -52,10 +52,17 @@ To learn React, check out the [React documentation](https://reactjs.org/).
     4. Get rid of logo and counter of import from App.js
     5. Delete all the css App.css
     6. Folder features/counter -> features
+    7. store.js - It is like onion which consist of all layers like app slice, user slice etc.
+        Change counter to user all over
+        Change CouterSlice.js to userSlice.js
+        userSlice.js make all the change
+
+
 
 2. Shortcut - 
     1. Go to component word's end like if <Sidebar /> -> sidebar| then ctrl+space to import it to app.
     
-3. Installations
+3. Installations -
     1. material ui - npm install @material-ui/core
     icons - npm install @material-ui/icons
+    2. Firebase - npm i firebase

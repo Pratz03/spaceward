@@ -1,11 +1,11 @@
-import { createAsyncThunk, createSlice } from '@reduxjs/toolkit';
+import { createSlice } from '@reduxjs/toolkit';
 // import { fetchCount } from './appAPI';
 
 const initialState = {
   // value: 0, Initial line here
   channelId: null,
   channelName: null,
-  status: 'idle',
+  // status: 'idle',
 };
 
 export const appSlice = createSlice({
@@ -13,8 +13,9 @@ export const appSlice = createSlice({
   initialState,
   // The `reducers` field lets us define reducers and generate associated actions
   reducers: {
-    setChannelId: (state, action) => {
-      state.app += action.payload;
+    setChannelInfo: (state, action) => {
+      state.channelId = action.payload.channelId;
+      state.channelName = action.payload.channelName;
     },
   },
   // The `extraReducers` field lets the slice handle actions defined elsewhere,
@@ -31,7 +32,7 @@ export const appSlice = createSlice({
   // },
 });
 
-export const { setChannelId } = appSlice.actions;
+export const { setChannelInfo } = appSlice.actions;
 
 
 export const selectChannelId = (state) => state.app.channelId;

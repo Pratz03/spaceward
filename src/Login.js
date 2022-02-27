@@ -13,12 +13,14 @@ function Login() {
         <div className='login'>
 
             <div className="login__logo">
-                <img src="https://cdn.pixabay.com/photo/2021/11/01/13/17/login-6760338_960_720.png" alt="Login" />
+                <img src="https://i.postimg.cc/9Mz1b8qS/20944201.png" alt="Login" />
             </div>
 
             <Button onClick={signIn}>Sign In</Button>
         </div>
     );
 }
+
+// https://cdn.pixabay.com/photo/2021/11/01/13/17/login-6760338_960_720.png
 
 export default Login;

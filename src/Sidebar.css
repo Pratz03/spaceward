@@ -3,7 +3,7 @@
     flex-direction: column;
     flex: 0.25;
     height: 100vh;
-    background-color: #2f3135;
+    background-color: #1a181f;
 }
 
 .sidebar__top {
@@ -11,9 +11,9 @@
     justify-content: space-between;
     align-items: center;
     padding: 20px;
-    background-color: #2f3135;
+    background-color: #1a181f;
     color: #ffffff;
-    border-bottom: 3px solid #26282c;
+    border-bottom: 3px solid #141414;
 }
 
 .sidebar__channels {
@@ -33,7 +33,7 @@
     justify-content: space-between;
     align-items: center;
     padding: 10px;
-    background-color: #2f3135;
+    background-color: #1a181f;
     color: gray;
 }
 
@@ -57,7 +57,7 @@
     justify-content: space-between;
     align-items: center;
     color: gray;
-    background-color: #2f3135;
+    background-color: #1a181f;
     padding: 10px;
     padding-top: 3px solid gray;
 }
@@ -98,7 +98,7 @@
 
 .sidebar__logout > h4 {
     color: #ffffff;
-    background-color: #2f3135;
+    background-color: #1a181f;
     padding: 10px 10px 15px;
     cursor: pointer;
 }

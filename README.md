@@ -66,3 +66,10 @@ To learn React, check out the [React documentation](https://reactjs.org/).
     1. material ui - npm install @material-ui/core
     icons - npm install @material-ui/icons
     2. Firebase - npm i firebase
+
+4. To deploy project on firebase - 
+    1. npm install -g firebase-tools
+    2. firebase login
+    3. firebase init
+    4. npm run build
+    5. firebase deploy

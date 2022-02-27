@@ -37,6 +37,16 @@
     color: gray;
 }
 
+.sidebar__channelList {
+    overflow: scroll;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+}
+
+.sidebar__channelList::-webkit-scrollbar {
+    display: none;
+}
+
 .sidebar__header {
     display: flex;
     align-items: center;

@@ -26,17 +26,17 @@ function Chat() {
             db.collection("channels")
             .doc(channelId)
             .collection("messages")
-            .orderBy('timestamp', 'desc')
+            .orderBy("timestamp", "desc")
             .onSnapshot((snapshot) => 
-                setMessages(snapshot.docs.map((doc) => doc.data()))
+                setMessages(snapshot.docs.map(doc => doc.data()))
             );
         }
     }, [channelId]);
 
-    const sendMessage = e => {
+    const sendMessage = (e) => {
         e.preventDefault();
 
-        db.collection('channels').doc(channelId).collection('message').
+        db.collection("channels").doc(channelId).collection("messages").
         add({
             timestamp: firebase.firestore.FieldValue.serverTimestamp(),
             message: input,
@@ -52,24 +52,19 @@ function Chat() {
 
             <div className="chat__messages">
                 {messages.map((message) => (
-                    <Message />
+                    <Message 
+                    timestamp={message.timestamp} 
+                    message={message.message} 
+                    user={message.user} 
+                    />
                 ))}
             </div>
 
             <div className="chat__input">
                 <AddCircleIcon fontSize="large" />
                 <form>
-                    <input 
-                    value={input}
-                    disabled={!channelId} 
-                    onChange={e => setInput(e.target.value)} 
-                    placeholder={`Message #${channelName}`} 
-                    />
-                    <button 
-                    onClick={sendMessage} 
-                    disabled={!channelId} 
-                    type='submit' 
-                    className='chat__inputButton'>Send Message</button>
+                    <input value={input} disabled={!channelId} onChange={e => setInput(e.target.value)} placeholder={`Message #${channelName}`} />
+                    <button disabled={!channelId} onClick={sendMessage} type='submit' className='chat__inputButton'>Send Message</button>
                 </form>
 
                 <div className="chat__inputIcons">

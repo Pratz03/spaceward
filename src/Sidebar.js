@@ -44,7 +44,7 @@ function Sidebar() {
         <div className='sidebar'>
 
             <div className="sidebar__top">
-                <h3>Clever Programmer</h3>
+                <h3>SPACEWARD</h3>
                 <ExpandMoreIcon />
             </div> 
 
